@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Conectados: cerrar la brecha digital en Las Colonias</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+:root{--bg:#e6eff1;--card:#fff;--ink:#0f2a43;--mute:#4b6379;--teal:#0a7c8c;--sun:#f4b41a;--line:#0a7c8c;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1b2b;--card:#12283d;--ink:#e8f1f5;--mute:#9db4c6;--teal:#3cc3d4;--line:#3cc3d4}}
+:root[data-theme="dark"]{--bg:#0b1b2b;--card:#12283d;--ink:#e8f1f5;--mute:#9db4c6;--teal:#3cc3d4;--line:#3cc3d4}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;overflow:hidden;background:var(--bg);color:var(--ink);font-family:"Source Sans 3",system-ui,Arial,sans-serif}
+#vp{position:relative;width:100%;height:100%;overflow:hidden}
+#stage{position:absolute;left:0;top:0;width:0;height:0;transform-origin:0 0;transition:transform 1.2s cubic-bezier(.65,0,.25,1)}
+svg.net{position:absolute;left:0;top:0;overflow:visible;pointer-events:none}
+.f{position:absolute;width:1000px;height:600px;background:var(--card);border-radius:18px;padding:48px 56px;border-top:10px solid var(--teal);opacity:.35;transition:opacity .8s;cursor:pointer;display:flex;flex-direction:column;justify-content:center;gap:18px}
+.f.on{opacity:1;cursor:default}
+h1,h2{font-family:"Bricolage Grotesque",Georgia,serif;margin:0;line-height:1.08}
+h1{font-size:68px}h2{font-size:50px}
+p{margin:0;font-size:27px;line-height:1.38;max-width:34em}
+.m{color:var(--mute)}
+.meta p{font-size:24px;line-height:1.5}
+.q{border-left:8px solid var(--sun);padding:6px 0 6px 22px;font-size:27px;font-style:italic}
+.chain{display:flex;align-items:center;gap:14px;font-family:"Bricolage Grotesque",Georgia,serif;font-size:30px}
+.chain span{background:var(--teal);color:#fff;padding:10px 24px;border-radius:40px}
+.chain i{font-style:normal;color:var(--mute)}
+.chips{display:flex;gap:16px;flex-wrap:wrap}
+.chip{background:var(--sun);color:#0f2a43;font-weight:600;font-size:25px;padding:10px 22px;border-radius:12px}
+.cols{display:flex;gap:22px}
+.cols div{flex:1;border:2px solid var(--teal);border-radius:14px;padding:18px 20px}
+.cols b{font-family:"Bricolage Grotesque",Georgia,serif;font-size:30px;display:block;margin-bottom:6px}
+.cols p{font-size:23px}
+.ref{font-size:19px;color:var(--mute)}
+#ui{position:fixed;left:0;right:0;bottom:calc(14px + env(safe-area-inset-bottom,0px));display:flex;justify-content:center;align-items:center;gap:14px;z-index:5}
+#ui button{font:600 18px "Source Sans 3",system-ui,sans-serif;background:var(--ink);color:var(--bg);border:0;border-radius:30px;padding:10px 22px;cursor:pointer}
+#ui button:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+#cnt{color:var(--mute);font-size:18px;min-width:60px;text-align:center}
+@media (prefers-reduced-motion:reduce){#stage,.f{transition:none}}
+</style>
+</head>
+<body>
+<div id="vp"><div id="stage">
+<svg class="net" width="1" height="1"><polyline fill="none" stroke="var(--line)" stroke-width="5" stroke-dasharray="4 16" stroke-linecap="round" points="500,300 1800,150 3100,400 3100,1150 1800,1200 500,1100 -800,700"/></svg>
+
+<section class="f meta" data-x="0" data-y="0" data-r="0">
+<h1>Conectados: cerrar la brecha digital en Las Colonias</h1>
+<p class="m">Lo que aprendimos trabajando con la comunidad en Soledad, Atlántico</p>
+<p><b>Materia:</b> NRC-69828 - Práctica en Responsabilidad Social<br><b>Programa:</b> Ingeniería en Sistemas<br><b>Docente:</b> Sonia Esperanza Velandia Heredia<br><b>Semana 4.</b> Tema: Desarrollo integral sostenible<br><b>Estudiante:</b> Harold Enrique Castro Torres</p>
+</section>
+
+<section class="f" data-x="1300" data-y="-150" data-r="-5">
+<h2>Una brecha que no es solo de plata</h2>
+<p>En Las Colonias nos dimos cuenta de que el problema no era solo pagar el internet: muchas familias ni siquiera sabían que existen tarifas sociales a las que podrían acceder.</p>
+<div class="q">¿Cómo se integra el desarrollo integral sostenible en el diseño de actividades para abordar las problemáticas identificadas?</div>
+<p class="m">Para esto contamos con la Fundación Conecta Soledad y la Junta de Acción Comunal.</p>
+</section>
+
+<section class="f" data-x="2600" data-y="100" data-r="4">
+<h2>Primero, que se enteren de las tarifas</h2>
+<p>Nos dedicamos a explicar, sin tecnicismos, qué son las tarifas sociales, quién puede pedirlas y cómo se solicitan.</p>
+<p>Lo que queríamos era que la información no se quedara en un volante, sino que alguien terminara haciendo el trámite.</p>
+<div class="chain"><span>Saber</span><i>→</i><span>Solicitar</span><i>→</i><span>Acceder</span></div>
+</section>
+
+<section class="f" data-x="2600" data-y="850" data-r="-3">
+<h2>¿Y esto qué tiene que ver con los ODS?</h2>
+<div class="chips"><div class="chip">ODS 10 Reducción de las desigualdades</div><div class="chip">ODS 9 Industria, innovación e infraestructura</div></div>
+<p>Informar es abrirle la puerta a algo a lo que la gente ya tiene derecho. Así se reduce una desigualdad que no depende solo del ingreso (ODS 10) y se aprovecha una infraestructura que ya existía, pero que muchos no usaban (ODS 9).</p>
+</section>
+
+<section class="f" data-x="1300" data-y="900" data-r="6">
+<h2>Después, aprender a sacarle provecho a la conexión</h2>
+<p>En las jornadas de alfabetización digital practicamos cosas del día a día: hacer un trámite, buscar información, moverse en internet con cuidado.</p>
+<p>Los ejercicios eran cortos y cada quien iba a su ritmo. La idea era que al final cada persona pudiera hacer algo en línea por su cuenta.</p>
+</section>
+
+<section class="f" data-x="0" data-y="800" data-r="-4">
+<h2>¿Y en esta, qué ODS tocamos?</h2>
+<div class="chips"><div class="chip">ODS 4 Educación de calidad</div><div class="chip">ODS 10 Reducción de las desigualdades</div></div>
+<p>De nada sirve tener conexión si uno no se siente seguro usándola. Aprender abre oportunidades de estudio y formación (ODS 4) y evita que la falta de habilidades siga repitiendo las mismas desigualdades (ODS 10).</p>
+</section>
+
+<section class="f" data-x="-1300" data-y="400" data-r="3">
+<h2>Lo que aprendí del desarrollo integral sostenible</h2>
+<div class="cols">
+<div><b>Social</b><p>Que la comunidad participe y no solo reciba.</p></div>
+<div><b>Económico</b><p>Que estar conectado abra oportunidades reales.</p></div>
+<div><b>Institucional</b><p>Aliarnos con la JAC y la Fundación para que esto siga cuando nosotros ya no estemos.</p></div>
+</div>
+<p class="ref">Arenas de Mesa y Cecchini (2022). Jiménez Herrero (2018).</p>
+</section>
+</div></div>
+
+<div id="ui"><button id="pv" aria-label="Anterior">Anterior</button><span id="cnt"></span><button id="nx" aria-label="Siguiente">Siguiente</button></div>
+
+<script>
+var stage=document.getElementById('stage'),cnt=document.getElementById('cnt'),F=[].slice.call(document.querySelectorAll('.f')),i=0;
+F.forEach(function(f,k){f.style.left=f.dataset.x+'px';f.style.top=f.dataset.y+'px';f.style.transform='rotate('+f.dataset.r+'deg)';f.addEventListener('click',function(){go(k)})});
+function go(n){i=Math.max(0,Math.min(F.length-1,n));var f=F[i],w=innerWidth,h=innerHeight,s=Math.min(w/1100,(h-60)/680),cx=+f.dataset.x+500,cy=+f.dataset.y+300;
+stage.style.transform='translate('+w/2+'px,'+(h-60)/2+'px) scale('+s+') rotate('+(-f.dataset.r)+'deg) translate('+(-cx)+'px,'+(-cy)+'px)';
+F.forEach(function(e,k){e.classList.toggle('on',k===i)});cnt.textContent=(i+1)+' / '+F.length}
+document.getElementById('pv').onclick=function(){go(i-1)};document.getElementById('nx').onclick=function(){go(i+1)};
+addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key===' ')go(i+1);if(e.key==='ArrowLeft')go(i-1);if(e.key==='Home')go(0)});
+addEventListener('resize',function(){go(i)});go(0);
+</script>
+</body>
+</html>
